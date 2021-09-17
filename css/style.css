@@ -11,6 +11,22 @@ html {
     font-family: 'Nunito', sans-serif;
 }
 
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+body {
+    margin: 0%;
+}
+
 a {
     text-decoration: none;
     color: #757575;
@@ -18,4 +34,143 @@ a {
 
 header {
     background-color: var(--psYellow);
+    height: 7rem;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7.5rem;
+}
+
+header nav a{
+    font-size: 1.25rem;
+    color: white;
+    padding-left: 4.3rem;
+}
+
+.content {
+    margin: 5rem 10vw;
+}
+
+.content .banner, .content .lowerSection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content .banner h3 {
+    width: 50%;
+    color: var(--psGray);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.content .servicos {
+    background-color: var(--psbgGray);
+
+    margin: 5rem -10vw;
+    padding: 0 10vw;
+}
+
+.content .servicos > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 6.25rem;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+.content .servicos .servicosDisplay {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content .servicos .servicosDisplay .servicoVert {
+    display: flex;
+    flex-direction: column;
+    width: 16.6rem;
+    margin-bottom: 6.25rem;
+}
+
+.content .servicos .servicosDisplay .servicoVert .imgServico {
+    width: 100%;
+    height: 0;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    background-color: white;
+    display: flex;
+}
+
+.content .servicos .servicosDisplay .servicoVert .imgServico img {
+    max-width: 100%;
+    height: fit-content;
+    align-self: center;
+}
+
+.content .servicos .servicosDisplay .servicoVert h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.content .servicos .servicosDisplay .servicoVert h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0%;
+}
+
+.content .lowerSection h3 {
+    color: var(--psGray);
+    font-weight: 700;
+}
+
+.content .lowerSection p {
+    color: var(--psGray);
+    font-weight: 400;
+}
+
+.content .lowerSection div {
+    width: 50%;
+}
+
+footer .footer {
+    background-color: var(--psYellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+footer .footer .footerContent {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer .footerContent ul {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0;
+}
+
+footer .copyright {
+    height: 3.5rem;
+    background-color: var(--psDetailsGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer .copyright > h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
 }
