@@ -96,19 +96,30 @@ header nav a{
     margin-bottom: 6.25rem;
 }
 
-.content .servicos .servicosDisplay .servicoVert .imgServico {
+.imgServico {
     width: 100%;
     height: 0;
     padding-top: 50%;
     padding-bottom: 50%;
-    background-color: white;
     display: flex;
 }
 
-.content .servicos .servicosDisplay .servicoVert .imgServico img {
+.imgServico.white {
+    background-color: white;
+}
+
+.imgServico.gray {
+    background-color: #b1b1b1;
+}
+
+.imgServico img {
     max-width: 100%;
     height: fit-content;
     align-self: center;
+}
+
+.square {
+    width: 16.6rem;
 }
 
 .content .servicos .servicosDisplay .servicoVert h2 {
@@ -175,8 +186,54 @@ footer .copyright > h2 {
     font-weight: 400;
 }
 
+/* SERVIÇOS */
 
+.content h2.servicosTitle {
+    color: var(--psYellow);
+    text-transform: uppercase;
+    text-align: center;
+}
 
+.content .servicoList {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem;
+}
+
+.content .servicoList .line {
+    width: 100%;
+    height: 5px;
+    background-color: var(--psDetailsGray);
+    margin: 5rem 0;
+}
+
+.content .servicoList .servicoHor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content .servicoList .servicoHor .square {
+    margin-right: 4rem;
+}
+
+.content .servicoList .servicoHor .listingContentHor {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    max-width: 70%;
+}
+
+.content .servicoList .servicoHor .listingContentHor ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* -------- */
+
+/* FORM UHUUUUUUUUUUUUUU */
 
 form input, form textarea, form select {
     width: 100%;
@@ -191,6 +248,7 @@ form button {
     background-color: var(--psYellow);
     color: white;
     border: 0;
-    font-weight: 700;
-
+    font-weight: 700
 }
+
+/* ---------------------- */
