@@ -12,24 +12,37 @@
     <header>
         <div class="headerLogo">
             <h1 class="sr-only">Petshop DH</h1>
-            <img src="img/Petshop DH-logo-white.svg" alt="Logo Petshop DH">
+            <a href="index.html"><img src="img/Petshop DH-logo-white.svg" alt="Logo Petshop DH"></a>
         </div>
 
-        <div class="headerLinks">
+        <nav class="headerLinks">
             <a href="">Sobre</a>
-            <a href="">Serviços</a>
-            <a href="">Contato</a>
-            <a href="">Login</a>
-        </div>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+            <a href="login.html">Login</a>
+        </nav>
     </header>
 
+    <section class="content contato">
 
-    <footer>
-        <div class="footer">
+        <h2>Contato</h2>
+
+        <div>
+            <form>
+
+                <label for="nome" class="sr-only">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+
+                <label for="mensagem" class="sr-only">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+
+                <button type="submit">enviar</button>
+            </form>
 
             <div class="footerContent">
-                <img src="img/logo-black.svg" alt="Logo DH-Petshop">
-
                 <div class="text">
                     <ul>
                         <li>Contato@petshop.com.br</li>
@@ -37,19 +50,25 @@
                     </ul>
                     <ul>
                         <li>Avenida paulista, 4242</li>
-                        <li>Bairro consolação</li>
-                        <li>São Paulo - SP</li>
+                        <li>Bairro consolação - São Paulo - SP</li>
                     </ul>
+                </div>
+                
+                <div class="map">
+                    mapa
                 </div>
                 
             </div>
 
-            <div class="map">
-                mapa
-            </div>
+            
 
         </div>
 
+
+
+    </section>
+
+    <footer>
         <div class="copyright">
             <h2>Petshop DH -2021</h2>
         </div>
