@@ -29,7 +29,16 @@ html {
 
 body {
     margin: 0%;
+    top: 0;
+    min-height: 100vh;
+    position: relative;
 }
+
+.content, .container {
+    margin: 5rem 10vw 0 10vw;
+    padding-bottom: 20rem;
+}
+
 
 a {
     text-decoration: none;
@@ -67,9 +76,7 @@ header nav a{
     padding-left: 4.3rem;
 }
 
-.content, .container{
-    margin: 5rem 10vw;
-}
+
 
 .content .banner, .content .lowerSection {
     display: flex;
@@ -166,6 +173,12 @@ header nav a{
 
 .content .lowerSection div {
     width: 50%;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 footer .footer {
@@ -309,6 +322,10 @@ button:active {
 /* -------- */
 
 /* CONTATO */
+
+.content.contato {
+    padding-bottom: 5rem;
+}
 
 .content.contato button {
     width: 100%;
