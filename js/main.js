@@ -1,37 +1,40 @@
-// console.log("main.js está sendo executado");
-// console.log(document);
+window.addEventListener("load", () => {
+    // console.log("main.js está sendo executado");
+    // console.log(document);
 
-let nomeForm = document.querySelector('input');
+    let nomeForm = document.querySelector('input');
 
-console.log(nomeForm);
+    console.log(nomeForm);
 
-let dadosForm = document.querySelectorAll('input');
+    let dadosForm = document.querySelectorAll('input');
 
-console.log(dadosForm);
-
-
-let tituloPrincipal = document.querySelector('h1');
-
-tituloPrincipal.innerText = "Faça parte do nosso time"
+    console.log(dadosForm);
 
 
-let inputEmail = document.querySelector('#email');
+    let tituloPrincipal = document.querySelector('h1');
 
-inputEmail.setAttribute("placeholder", "email@hotmail.com")
+    tituloPrincipal.innerText = "Faça parte do nosso time"
 
 
-let inputPeriodo = document.querySelector('#periodo');
+    let inputEmail = document.querySelector('#email');
 
-console.log(inputPeriodo.innerHTML);
+    inputEmail.setAttribute("placeholder", "email@hotmail.com")
 
-inputPeriodo.innerHTML += '<option value="Trainee">Trainee</option>';
 
-console.log(inputPeriodo.innerHTML);
+    let inputPeriodo = document.querySelector('#periodo');
 
-tituloPrincipal.style.color = "var(--psYellow)";
+    console.log(inputPeriodo.innerHTML);
 
-let elementoDiv = document.querySelector("div");
+    inputPeriodo.innerHTML += '<option value="Trainee">Trainee</option>';
 
-// elementoDiv.classList.add("novaClasse");
+    console.log(inputPeriodo.innerHTML);
 
-// elementoDiv.classList.remove("container");
+    tituloPrincipal.style.color = "var(--psYellow)";
+
+    let elementoDiv = document.querySelector("div");
+
+    // elementoDiv.classList.add("novaClasse");
+
+    // elementoDiv.classList.remove("container");
+})
+
