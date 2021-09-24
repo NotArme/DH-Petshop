@@ -117,7 +117,7 @@ header nav a{
 
 .content .servicos .servicosDisplay {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -201,6 +201,8 @@ footer .footerContent {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding: auto;
+    justify-content: space-around;
 }
 
 .footerContent ul {
@@ -257,7 +259,7 @@ footer .copyright > h2 {
 }
 
 .content .servicoList .servicoHor .square {
-    margin-right: 4rem;
+    margin: auto;
 }
 
 .content .servicoList .servicoHor .listingContentHor {
@@ -478,3 +480,15 @@ form .check:last-of-type {
 }
 
 /* ---------------------- */
+
+.map {
+    height: 14rem;
+    width: 40rem;
+    max-width: 100%;
+    padding: 1rem 0;
+}
+
+.map iframe {
+    height: 100%;
+    width: 100%;
+}
